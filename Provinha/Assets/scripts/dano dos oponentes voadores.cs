@@ -59,13 +59,13 @@ public class InimigoVoador : MonoBehaviour
 
                     if (pontosDePatrulha[pontoAtual].position.x > transform.position.x)
                     {
-                        spriteRenderer.flipX = true;
+                        spriteRenderer.flipX = false;
                     }
 
                     else
                     if (pontosDePatrulha[pontoAtual].position.x < transform.position.x)
                     {
-                        spriteRenderer.flipX = false;
+                        spriteRenderer.flipX = true;
                     }
                 }
             }
@@ -83,7 +83,7 @@ public class InimigoVoador : MonoBehaviour
                transform.position = Vector3.MoveTowards(transform.position, 
                    player.transform.position, 
                    velocidade * Time.deltaTime);
-              
+
                spriteRenderer.flipX = true;
             }
             else
