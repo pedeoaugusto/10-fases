@@ -83,8 +83,8 @@ public class InimigoVoador : MonoBehaviour
                transform.position = Vector3.MoveTowards(transform.position, 
                    player.transform.position, 
                    velocidade * Time.deltaTime);
-
-               spriteRenderer.flipX = true;
+              
+               spriteRenderer.flipX = false;
             }
             else
             //esquerda
@@ -95,7 +95,7 @@ public class InimigoVoador : MonoBehaviour
                     player.transform.position, 
                     velocidade * Time.deltaTime);
                 
-                spriteRenderer.flipX = false;
+                spriteRenderer.flipX = true;
             }
          
        
